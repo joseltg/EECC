@@ -3,7 +3,7 @@
 #echo "Extrayendo texto del PDF..."
 gs -sDEVICE=txtwrite -sPDFPassword=$2 -o tmpeecc.txt "$1" &> /dev/null
 
-#a través de awk procesamos el archivo para ahcerlo tabular
+#a través de awk procesamos el archivo para hacerlo tabular
 #echo "Convirtiendo a CSV..."
 awk -f awk_eecc_ahorros_bcp.sh tmpeecc.txt > "$1.out"
 

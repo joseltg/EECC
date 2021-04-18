@@ -1,3 +1,0 @@
-gs -sDEVICE=txtwrite -sPDFPassword=41590081 -o tmpeecc.txt EECC_AHORRO.PDF
-awk '/(0|1|2|3)(0|1|2|3|4|5|6|7|8|9)(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SET|OCT|NOV|DIC)/ {print}' tmpeecc.txt > eecc.txt 
-

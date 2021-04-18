@@ -1,10 +1,7 @@
 #!/bin/bash
-RutaLand="/home/jtello/OneDrivePersonalProjects/EECC"
-RutaProcesadoPDF="/home/jtello/OneDrivePersonalProjects/EECC/ProcesadoPDF"
-RutaProcesadoCSV="/home/jtello/OneDrivePersonalProjects/EECC/ProcesadoCSV"
+source rutas.sh
 echo "moviendo .PDF a IN_FILES/"
 mv $RutaLand/*.PDF IN_FILES/
-#cp /home/jtello/OneDrivePersonalProjects/EECC/*.PDF /home/jtello/OneDrivePersonalProjects/EECC/IN_FILES/
 for f in IN_FILES/*; do
  ./eecc.sh "$f" $1
 #echo "$f"
